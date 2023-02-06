@@ -1,4 +1,6 @@
 *ny_taxi_postgres_data*
+secrets/*
 *venv*
 *.csv*
+*.parquet
 *.terraform*
