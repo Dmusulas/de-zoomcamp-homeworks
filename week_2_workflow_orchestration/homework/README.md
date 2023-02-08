@@ -56,4 +56,6 @@ How many rows were processed by the script?
 
 ### Answer
 
+Created Github blcok, added color condition to parameterized_flow.py then from root run `prefect deployment build week_2_workflow_orchestration/flows/03_deployments/parameterized_flow.py:etl_parent_flow --name new_parameterized_etl --apply` and then from UI ran with parameter I need.
 
+## :
