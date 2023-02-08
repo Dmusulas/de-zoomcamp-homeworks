@@ -1,7 +1,7 @@
 ###
 ### A complete description of a Prefect Deployment for flow 'etl-parent-flow'
 ###
-name: github-web-to-gcs
+name: new_parameterized_etl
 description: null
 version: 8b04e7a4dda5da0aea3e1c7de68b2b65
 # The work queue that will handle this deployment's runs
@@ -28,18 +28,9 @@ infrastructure:
 ###
 flow_name: etl-parent-flow
 manifest_path: null
-storage:
-  repository: https://github.com/Dmusulas/de-zoomcamp-homeworks/
-  reference: null
-  access_token: null
-  include_git_objects: true
-  _block_document_id: 157c1fe8-d19a-425a-9d2a-3b15a224b73f
-  _block_document_name: github-storage
-  _is_anonymous: false
-  block_type_slug: github
-  _block_type_slug: github
-path: ''
-entrypoint: flows/03_deployments/parameterized_flow.py:etl_parent_flow
+storage: null
+path: /home/dovydas/Repos/DE-Zoomcamp-2023
+entrypoint: week_2_workflow_orchestration/flows/03_deployments/parameterized_flow.py:etl_parent_flow
 parameter_openapi_schema:
   title: Parameters
   type: object
@@ -65,4 +56,4 @@ parameter_openapi_schema:
       type: string
   required: null
   definitions: null
-timestamp: '2023-02-08T19:35:08.048188+00:00'
+timestamp: '2023-02-08T19:51:49.472523+00:00'
