@@ -1,0 +1,67 @@
+###
+### A complete description of a Prefect Deployment for flow 'etl-parent-flow'
+###
+name: fhv_deployment
+description: null
+version: 94f16317727ffab723f66462b7594586
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+work_pool_name: default-agent-pool
+tags: []
+parameters: {}
+schedule: null
+is_schedule_active: true
+infra_overrides: {}
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: etl-parent-flow
+manifest_path: null
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  _block_document_id: e084511f-a663-4bbf-926a-3d6c5f847a4c
+  _block_document_name: anonymous-52d70b98-27dd-4865-88fe-c509f97cb9a9
+  _is_anonymous: true
+  block_type_slug: process
+  _block_type_slug: process
+storage: null
+path: /home/dovydas/Repos/DE-Zoomcamp-2023/week_3_bigquery
+entrypoint: flows/etl_web_to_gcs_csv.py:etl_parent_flow
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties:
+    months:
+      title: months
+      default:
+      - 1
+      - 2
+      position: 0
+      type: array
+      items:
+        type: integer
+    year:
+      title: year
+      default: 2021
+      position: 1
+      type: integer
+    color:
+      title: color
+      default: yellow
+      position: 2
+      type: string
+    storage_format:
+      title: storage_format
+      default: csv
+      position: 3
+      type: string
+  required: null
+  definitions: null
+timestamp: '2023-03-23T17:51:06.602478+00:00'
